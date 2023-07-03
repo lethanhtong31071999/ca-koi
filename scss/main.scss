@@ -1,0 +1,16 @@
+// Custom variables
+@import "./_variable.scss";
+
+// function and variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// Custom
+$ct-theme-colors: (
+  "primary": $primary,
+  "danger": $danger
+);
+$theme-colors: map-merge($theme-colors, $ct-theme-colors);
+
+// import bootstrap 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

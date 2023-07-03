@@ -1,0 +1,1 @@
+img{width:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center}.headline{margin-bottom:20px}.headline::after,.headline::before{display:inline-block;content:"";position:absolute;width:100px;height:2px;background-color:#ccc;top:50%;transform:translateY(-50%)}.headline::after{left:100px}.headline::before{right:100px}
