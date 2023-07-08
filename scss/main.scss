@@ -12,5 +12,7 @@ $ct-theme-colors: (
 );
 $theme-colors: map-merge($theme-colors, $ct-theme-colors);
 
+@import "./style";
+
 // import bootstrap 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

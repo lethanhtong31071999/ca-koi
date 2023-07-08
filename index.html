@@ -7,7 +7,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
     <title>Ca Koi</title>
   </head>
@@ -124,15 +123,34 @@
       </nav>
       <section id="content">
         <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-main"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-main"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-main"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <a href="#" target="_blank">
                 <img
-                  src="./assets/images/facebook-banner-desktop.jpg"
+                  src="./assets/images/banner/facebook-banner-desktop.jpg"
                   class="d-none d-md-block w-100"
                   alt="carousel-1" />
                 <img
-                  src="./assets/images/facebook-banner.jpg"
+                  src="./assets/images/banner/facebook-banner.jpg"
                   class="d-block d-md-none w-100"
                   alt="carousel-1" />
               </a>
@@ -140,11 +158,11 @@
             <div class="carousel-item">
               <a href="#" target="_blank">
                 <img
-                  src="./assets/images/tiktok-banner-desktop.jpg"
+                  src="./assets/images/banner/tiktok-banner-desktop.jpg"
                   class="d-none d-md-block w-100"
                   alt="carousel-1" />
                 <img
-                  src="./assets/images/tiktok-banner.jpg"
+                  src="./assets/images/banner/tiktok-banner.jpg"
                   class="d-block d-md-none w-100"
                   alt="carousel-1" />
               </a>
@@ -152,11 +170,11 @@
             <div class="carousel-item">
               <a href="#" target="_blank">
                 <img
-                  src="./assets/images/zalo-banner-desktop.jpg"
+                  src="./assets/images/banner/zalo-banner-desktop.jpg"
                   class="d-none d-md-block w-100"
                   alt="carousel-3" />
                 <img
-                  src="./assets/images/zalo-banner.jpg"
+                  src="./assets/images/banner/zalo-banner.jpg"
                   class="d-block d-md-none w-100"
                   alt="carousel-3" />
               </a>
@@ -179,178 +197,377 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </section>
-
-      <!-- Content -->
-      <section class="bg-light">
-        <!-- Benefits -->
-        <div class="container py-2 py-lg-4">
-          <div class="d-none d-md-block">
+        <div class="bg-light">
+          <!-- Benefits -->
+          <div class="container py-2 py-lg-4">
             <div class="d-flex justify-content-center">
-              <h3 class="headline text-dark text-muted fs-5 position-relative">Nổi bật</h3>
+              <h3 class="headline text-dark fs-5 position-relative">Nổi bật</h3>
             </div>
             <div class="row g-3">
-              <div class="col-6 col-lg-3">
-                <div class="card w-100 px-2 px-lg-4 py-2 py-lg-4">
-                  <a class="text-center" href="#">
-                    <i class="fa-solid fa-truck-fast text-black-50" style="font-size: 80px"></i>
-                  </a>
-                  <div class="card-body text-center p-0 pt-4">
-                    <h6 class="text-uppercase">Vận chuyển</h6>
-                    <p class="text-secondary m-0">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eos dolore
-                      ex illo unde minus?
-                    </p>
-                  </div>
-                </div>
+              <div class="col-12 text-center">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/QC6DYGby9J0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
               </div>
-              <div class="col-6 col-lg-3">
-                <div class="card w-100 px-2 px-lg-4 py-2 py-lg-4">
-                  <a class="text-center" href="#">
-                    <i
-                      class="fa-solid fa-hand-holding-dollar text-black-50"
-                      style="font-size: 80px"></i>
-                  </a>
-                  <div class="card-body text-center p-0 pt-4">
-                    <h6 class="text-uppercase">Giá thành</h6>
-                    <p class="text-secondary m-0">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eos dolore
-                      ex illo unde minus?
-                    </p>
+              <div class="col-12 d-none d-lg-block">
+                <div class="row g-3">
+                  <div class="col-6 col-lg-3">
+                    <div class="card w-100 px-2 px-lg-4 py-2 py-lg-4">
+                      <a class="text-center" href="#">
+                        <i class="fa-solid fa-truck-fast text-black-50" style="font-size: 80px"></i>
+                      </a>
+                      <div class="card-body text-center p-0 pt-4">
+                        <h6 class="text-uppercase">Vận chuyển</h6>
+                        <p class="text-secondary m-0">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eos
+                          dolore ex illo unde minus?
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-6 col-lg-3">
-                <div class="card w-100 px-2 px-lg-4 py-2 py-lg-4">
-                  <a class="text-center" href="#">
-                    <i class="fa-solid fa-lightbulb text-black-50" style="font-size: 80px"></i>
-                  </a>
-                  <div class="card-body text-center p-0 pt-4">
-                    <h6 class="text-uppercase">Tư vấn</h6>
-                    <p class="text-secondary m-0">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eos dolore
-                      ex illo unde minus?
-                    </p>
+                  <div class="col-6 col-lg-3">
+                    <div class="card w-100 px-2 px-lg-4 py-2 py-lg-4">
+                      <a class="text-center" href="#">
+                        <i
+                          class="fa-solid fa-hand-holding-dollar text-black-50"
+                          style="font-size: 80px"></i>
+                      </a>
+                      <div class="card-body text-center p-0 pt-4">
+                        <h6 class="text-uppercase">Giá thành</h6>
+                        <p class="text-secondary m-0">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eos
+                          dolore ex illo unde minus?
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-6 col-lg-3">
-                <div class="card w-100 px-2 px-lg-4 py-2 py-lg-4">
-                  <a class="text-center" href="#">
-                    <i class="fa-solid fa-thumbs-up text-black-50" style="font-size: 80px"></i>
-                  </a>
-                  <div class="card-body text-center p-0 pt-4">
-                    <h6 class="text-uppercase">Chất lượng & Uy Tín</h6>
-                    <p class="text-secondary m-0">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eos dolore
-                      ex illo unde minus?
-                    </p>
+                  <div class="col-6 col-lg-3">
+                    <div class="card w-100 px-2 px-lg-4 py-2 py-lg-4">
+                      <a class="text-center" href="#">
+                        <i class="fa-solid fa-lightbulb text-black-50" style="font-size: 80px"></i>
+                      </a>
+                      <div class="card-body text-center p-0 pt-4">
+                        <h6 class="text-uppercase">Tư vấn</h6>
+                        <p class="text-secondary m-0">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eos
+                          dolore ex illo unde minus?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <div class="card w-100 px-2 px-lg-4 py-2 py-lg-4">
+                      <a class="text-center" href="#">
+                        <i class="fa-solid fa-thumbs-up text-black-50" style="font-size: 80px"></i>
+                      </a>
+                      <div class="card-body text-center p-0 pt-4">
+                        <h6 class="text-uppercase">Chất lượng & Uy Tín</h6>
+                        <p class="text-secondary m-0">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eos
+                          dolore ex illo unde minus?
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Features -->
-        <div class="container py-2 py-lg-4">
-          <div class="d-flex justify-content-center">
-            <h3 class="headline text-dark text-muted fs-5 position-relative">Sản phẩm</h3>
-          </div>
-          <div class="row g-4 g-md-6">
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-              <div class="card product">
-                <img src="https://placehold.co/270x270" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Tên sản phẩm</h5>
-                  <p class="card-text text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero
-                    sapiente a dicta expedita est laborum, temporibus assumenda minus reprehenderit.
-                  </p>
-                  <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+          <!-- End Benefits -->
+
+          <!-- Features Experience -->
+          <div class="container py-2 py-lg-4">
+            <div class="d-flex justify-content-center">
+              <h3 class="headline text-dark fs-5 position-relative">Kinh nghiệm nuôi cá</h3>
+            </div>
+            <div class="row g-4 g-md-6">
+              <div class="col-6 col-lg-3">
+                <div class="category-container">
+                  <a class="home-category text-center d-block shadow-sm" href="#">
+                    <img
+                      src="./assets/images/experience/exp1.jpg"
+                      class="w-100 object-fit-cover"
+                      alt="exp1" />
+                  </a>
                 </div>
               </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-              <div class="card product">
-                <img src="https://placehold.co/270x270" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Tên sản phẩm</h5>
-                  <p class="card-text text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero
-                    sapiente a dicta expedita est laborum, temporibus assumenda minus reprehenderit.
-                  </p>
-                  <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+              <div class="col-6 col-lg-3">
+                <div class="category-container">
+                  <a class="home-category text-center d-block shadow-sm" href="#">
+                    <img
+                      src="./assets/images/experience/exp2.jpg"
+                      class="w-100 object-fit-cover"
+                      alt="exp2" />
+                  </a>
                 </div>
               </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-              <div class="card product">
-                <img src="https://placehold.co/270x270" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Tên sản phẩm</h5>
-                  <p class="card-text text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero
-                    sapiente a dicta expedita est laborum, temporibus assumenda minus reprehenderit.
-                  </p>
-                  <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+              <div class="col-6 col-lg-3">
+                <div class="category-container">
+                  <a class="home-category text-center d-block shadow-sm" href="#">
+                    <img
+                      src="./assets/images/experience/exp3.jpg"
+                      class="w-100 object-fit-cover"
+                      alt="exp3" />
+                  </a>
                 </div>
               </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-              <div class="card product">
-                <img src="https://placehold.co/270x270" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Tên sản phẩm</h5>
-                  <p class="card-text text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero
-                    sapiente a dicta expedita est laborum, temporibus assumenda minus reprehenderit.
-                  </p>
-                  <a href="#" class="btn btn-primary w-100">Mua ngay</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-              <div class="card product">
-                <img src="https://placehold.co/270x270" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Tên sản phẩm</h5>
-                  <p class="card-text text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero
-                    sapiente a dicta expedita est laborum, temporibus assumenda minus reprehenderit.
-                  </p>
-                  <a href="#" class="btn btn-primary w-100">Mua ngay</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-              <div class="card product">
-                <img src="https://placehold.co/270x270" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Tên sản phẩm</h5>
-                  <p class="card-text text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero
-                    sapiente a dicta expedita est laborum, temporibus assumenda minus reprehenderit.
-                  </p>
-                  <a href="#" class="btn btn-primary w-100">Mua ngay</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card product">
-                <img src="https://placehold.co/270x270" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Tên sản phẩm</h5>
-                  <p class="card-text text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero
-                    sapiente a dicta expedita est laborum, temporibus assumenda minus reprehenderit.
-                  </p>
-                  <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+              <div class="col-6 col-lg-3">
+                <div class="position-relative shadow-sm category-container">
+                  <a class="home-category text-center d-block" href="#">
+                    <img
+                      src="./assets/images/experience/exp4.jpg"
+                      class="w-100 object-fit-cover"
+                      alt="exp4" />
+                  </a>
+                  <div
+                    class="home-category-load position-absolute top-0 start-0 bottom-0 end-0 d-flex justify-content-center align-items-center z-1">
+                    <a class="btn btn-lg btn-primary">Xem thêm</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- End Features Experience -->
+
+          <!-- Features products-->
+          <div class="container py-2 py-lg-4">
+            <div class="d-flex justify-content-center">
+              <h3 class="headline text-dark fs-5 position-relative">Sản phẩm</h3>
+            </div>
+            <div class="card text-center bg-light-subtle border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <span class="badge bg-secondary">Thức ăn</span>
+                </h5>
+                <div class="row g-4 g-md-6">
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product">
+                      <img
+                        src="./assets/images/product/product1.jpg"
+                        class="card-img-top"
+                        alt="product1" />
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product">
+                      <img
+                        src="./assets/images/product/product2.jpg"
+                        class="card-img-top"
+                        alt="product1" />
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product">
+                      <img
+                        src="./assets/images/product/product3.jpg"
+                        class="card-img-top"
+                        alt="product3" />
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-center bg-light-subtle border-0 shadow-sm mt-2 mt-lg-4">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <span class="badge bg-secondary">Thuốc trị bệnh</span>
+                </h5>
+                <div class="row g-4 g-md-6">
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product">
+                      <img
+                        src="./assets/images/product/product4.jpg"
+                        class="card-img-top"
+                        alt="product1" />
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product">
+                      <img
+                        src="./assets/images/product/product5.jpg"
+                        class="card-img-top"
+                        alt="product1" />
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product">
+                      <img
+                        src="./assets/images/product/product6.jpg"
+                        class="card-img-top"
+                        alt="product3" />
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product">
+                      <img
+                        src="./assets/images/product/product7.jpg"
+                        class="card-img-top"
+                        alt="product3" />
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product">
+                      <img
+                        src="./assets/images/product/product8.jpg"
+                        class="card-img-top"
+                        alt="product3" />
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-center bg-light-subtle border-0 shadow-sm mt-2 mt-lg-4">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <span class="badge bg-secondary">Thực phẩm bổ sung</span>
+                </h5>
+                <div class="row g-4 g-md-6">
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product">
+                      <img
+                        src="./assets/images/product/product4.jpg"
+                        class="card-img-top"
+                        alt="product1" />
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product">
+                      <img
+                        src="./assets/images/product/product5.jpg"
+                        class="card-img-top"
+                        alt="product1" />
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product">
+                      <img
+                        src="./assets/images/product/product6.jpg"
+                        class="card-img-top"
+                        alt="product3" />
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product">
+                      <img
+                        src="./assets/images/product/product7.jpg"
+                        class="card-img-top"
+                        alt="product3" />
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product">
+                      <img
+                        src="./assets/images/product/product8.jpg"
+                        class="card-img-top"
+                        alt="product3" />
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Features products-->
+
+          <!-- Features Design -->
+          <div class="container py-2 py-lg-4">
+            <div class="d-flex justify-content-center">
+              <h3 class="headline text-dark fs-5 position-relative">Thiết kế & xây dựng</h3>
+            </div>
+            <div class="row g-4 g-md-6">
+              <div class="col-6 col-lg-3">
+                <div class="category-container">
+                  <a class="home-category text-center d-block shadow-sm" href="#">
+                    <img
+                      src="./assets/images/design/design1.jpg"
+                      class="w-100 object-fit-cover"
+                      alt="exp1" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="category-container">
+                  <a class="home-category text-center d-block shadow-sm" href="#">
+                    <img
+                      src="./assets/images/design/design2.jpg"
+                      class="w-100 object-fit-cover"
+                      alt="exp2" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="category-container">
+                  <a class="home-category text-center d-block shadow-sm" href="#">
+                    <img
+                      src="./assets/images/design/design3.jpg"
+                      class="w-100 object-fit-cover"
+                      alt="exp3" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="position-relative shadow-sm category-container">
+                  <a class="home-category text-center d-block" href="#">
+                    <img
+                      src="./assets/images/design/design4.jpg"
+                      class="w-100 object-fit-cover"
+                      alt="exp4" />
+                  </a>
+                  <div
+                    class="home-category-load position-absolute top-0 start-0 bottom-0 end-0 d-flex justify-content-center align-items-center z-1">
+                    <a class="btn btn-lg btn-primary">Xem thêm</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Features Design -->
         </div>
       </section>
+
       <!-- Footer -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
